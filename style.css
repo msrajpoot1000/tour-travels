@@ -1,0 +1,243 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: red; */
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    
+    header {
+        width: 100%;
+        height: 100vh;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('redfort.jpg'); */
+        /* background: no-repeat; */
+        background-size: cover;
+        border: 3px solid white;
+    }
+    
+    nav {
+        width: 100%;
+        height: 9vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    
+    nav .menu a:first-child {
+        color: #00b894;
+    }
+    
+    nav .logo {
+        width: 25%;
+        align-items: center;
+        margin-left: 50px;
+        /* background-color: red; */
+    }
+    
+    nav .menu {
+        width: 60%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav .menu a {
+        width: 25%;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    main {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    section {}
+    
+    section h3 {
+        font-size: 35px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section h1 {
+        font-size: 48px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+        margin: 30px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section p {
+        font-size: 25px;
+        word-spacing: 4px;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 1px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section a {
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        /* display: flex;
+    justify-content: center;
+    align-items: center; */
+        transition: all .5s ease;
+    }
+    
+    section .btone {
+        background-color: #fff;
+        color: #000;
+        /* border-radius: 20px; */
+        margin-right: 10px;
+    }
+    
+    section .btwo {
+        background-color: #00b894;
+        color: white;
+        /* border-radius: 20px;
+     */
+    }
+    
+    .manish {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .change_content:after {
+        content: "";
+        animation: changetext 24s infinite linear;
+        color: #00b894;
+        margin-left: 20px;
+    }
+    
+    @keyframes changetext {
+        0% {
+            content: "HYDERABAD";
+        }
+        20% {
+            content: "AGRA";
+        }
+        40% {
+            content: "JAIPUR";
+        }
+        60% {
+            content: "GUJRAT";
+        }
+        80% {
+            content: "DELHI";
+        }
+        100% {
+            content: "MUMBAI";
+        }
+    }
+    
+    .btone:hover {
+        background-color: #00b894;
+        color: white;
+        /* border-radius: 20px;
+     */
+    }
+    
+    .btwo:hover {
+        background-color: #fff;
+        color: #000;
+        /* border-radius: 20px; */
+        margin-right: 10px;
+    }
+    /* @media(.change_content:after 0%{content:"jaipur"}){
+
+    } */
+    
+    header {
+        /* animation: changetext 6s infinite linear; */
+        /* animation: mymove;
+        animation-delay: 10;*/
+        animation-timing-function: step-end;
+        animation: mymove 24s infinite linear;
+    }
+    
+    @keyframes mymove {
+        0% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('charminar.jpg');
+            background-size: cover;
+        }
+        20% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('tajmahal.jpg');
+            background-size: cover;
+        }
+        40% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('hawaMahal.jpg');
+            background-size: cover;
+        }
+        60% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('IronManOfIndia.jpg');
+            background-size: cover;
+        }
+        80% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('redfort.jpg');
+            background-size: cover;
+        }
+        100% {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('gatewayofIndia.jpg');
+            background-size: cover;
+        }
+    }
+    
+    .bottom2 {
+        color: white;
+        /* height: 300px; */
+    }
+    
+    .bottom1 {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        height: 15vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    
+    .bottom1:after {
+        content: "";
+        animation: sentence_change 7s infinite linear;
+    }
+    
+    @keyframes sentence_change {
+        0% {
+            content: "This is nice tourism company";
+        }
+        50% {
+            content: "Try Only One Call"
+        }
+    }
